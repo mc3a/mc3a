@@ -1,0 +1,34 @@
+# Connect to TV
+adb connect <TV_IP>
+# verify devices
+adb devices
+
+# list installed packages
+adb shell pm list packages -f -3
+# list all packages
+adb shell pm list packages -f
+
+# disable package
+adb shell pm disable-user --user 0 <PACKAGE_NAME>
+
+## disable alexa shopping
+adb shell pm disable-user --user 0 com.amazon.tv.alexadestination 
+## disable game circle
+adb shell pm disable-user --user 0 com.amazon.ags.app
+## disable amazon FreeTime
+adb shell pm disable-user --user 0 com.amazon.tv.tahoe
+## disable amazon music
+adb shell pm disable-user --user 0 com.amazon.bueller.music
+## disable amazon photos
+adb shell pm disable-user --user 0 com.amazon.bueller.photos
+## disable amazon app store
+adb shell pm disable-user --user 0 com.amazon.venezia
+## enable app store
+adb shell pm enable --user 0 com.amazon.venezia
+
+# list global settings
+adb shell settings list global
+## turn off UI animations
+adb shell settings put global animator_duration_scale 0.0
+adb shell settings put global transition_animation_scale 0.0
+adb shell settings put global window_animation_scale 0.0

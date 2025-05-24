@@ -1,0 +1,222 @@
+adb shell
+ Before you can execute an ADB Shell command, you’ll need to type ‘adb shell‘ in
+ adb shell pm uninstall
+ adb shell pm uninstall -k --user 0 com.facebook.appmanager-k: Keep the app data and cache after package removal. If you want the app data to
+ adb shell pm uninstall --user 0 com.android.chrome
+ If you don’t know the app package name for the apps to remove, use adb shell pm
+ adb shell cmd package install-existing
+ adb shell cmd package install-existing com.facebook.appmanager
+ adb shell pm disable-user <package-name>
+ adb shell pm disable-user --user 0 com.google.ar.core
+ adb shell pm clear <package-name>
+ adb shell pm clear --user 0 com.facebook.appmanager
+ adb shell pm hide <package-name>
+ adb shell pm hide --user 0 com.whatsapp
+ adb shell pm list packages
+ adb shell pm list packages -s
+ adb shell list packages -r
+ adb shell pm list packages -3
+ adb shell pm list packages -d
+ adb shell pm list packages -e
+ adb shell pm list packages -u
+ adb shell pm list packages -i
+ adb shell pm list packages <keywords>
+ adb shell pm list packages -f
+ adb shell pm list packages | grep 'google'
+ adb shell pm path <package-name>
+ adb shell pm create-user
+ adb shell pm create-user username
+ adb shell pm remove-user
+ adb shell pm remove-user user 1
+ adb shell pm get-max-users
+ adb shell pm list features
+ adb shell pm list permissions
+ adb shell pm list permissions -d group
+ adb shell pm list permissions -d -g
+ adb shell pm path
+ adb shell pm path <package-name>
+ adb shell settings
+ adb shell settings list system
+ adb shell settings get system volume_system
+ adb shell settings get system notification_sound
+ adb shell settings list secure
+ adb shell settings get secure android_id
+ adb shell settings get secure bluetooth_address
+ adb shell settings list global
+ adb shell settings get global mobile_data
+ adb shell settings get global wifi_on
+ adb shell dumpsys
+ adb shell dumpsys
+ adb shell dumpsys package packages (get info about all installed apps)
+ adb shell dumpsys input
+ adb shell dumpsys display (get details about the display)
+ adb shell dumpsys battery (get detailed info about your device's battery and 
+ adb shell dumpsys batterystats (battery usage statistics)
+ adb shell dumpsys activity (get a complete list of all ongoing activities on 
+ adb shell dumpsys cpuinfo (get detailed about CPU usage)
+ Executing the adb shell dumpsys cpuinfo command, for instance, will print a list of
+ adb shell wm density
+ adb shell dumpsys window displays
+ adb shell wm size
+ PS C:\Users\Technastic\Desktop> adb shell wm size
+ adb shell wm size 1080x2220
+ adb shell wm density 420
+ adb shell wm size 720x1560
+ adb shell wm density 360
+ adb shell screencap
+ adb shell screencap /sdcard/screenshot-01.png
+ adb shell screenrecord
+ adb shell screenrecord /sdcard/screenrecord.mp4
+ adb shell screenrecord --size 1920x1080 /sdcard/screenrecord-01.mp4
+ adb shell screenrecord --time-limit 120 /sdcard/screenrecord-01.mp4
+ adb shell screenrecord --bit-rate 6000000 /sdcard/screenrecord-01.mp4
+ adb shell getprop & adb shell setprop
+ adb shell getprop
+ adb shell setprop commands. See the examples below:
+ The adb shell getprop commands fetch information about Android system
+ adb shell getprop
+ adb shell getprop ro.build.version.sdk
+ adb shell getprop ro.build.version.security_patch
+ adb shell getprop ro.board.platform
+ adb shell getprop ro.build.version.release
+ adb shell getprop ro.vendor.product.model
+ adb shell getprop ro.product.manufacturer
+ adb shell getprop ro.serialno
+ adb shell getprop ro.oem_unlock_supported
+ adb shell getprop ro.bootimage.build.fingerprint
+ adb shell getprop ro.boot.wifimacaddr
+ adb shell cat /proc/cpuinfo
+ adb shell pm reset-permissions -p <app-package-name>
+ adb shell pm grant <app-package-name> <permission-name>
+ adb shell pm revoke <app-package-name> <permission-name>
+ adb shell getprop | grep -e 'model' -e 'version.sdk' -e 'manufacturer' -e 'hardware' -e 'platform' -e 'revision' -e 'serialno' -e 'product.name' -e 'brand'
+ adb shell cd
+ adb shell
+ adb shell rm
+ storage. Launch the command window, execute the ‘adb shell’ command, and then
+ adb shell mkdir
+ adb shell cp
+ adb shell mv
+ adb shell top
+ adb shell ip
+ adb shell netstat
+ adb shell netstat
+ adb shell pm list features
+ adb shell am start -a android.intent.action.CALL -d tel:+19797220011
+ adb shell am start -a android.intent.action.SENDTO -d sms:+19797220011 --es sms_body 
+ adb shell input text 'I love this adb command'
+ adb shell am start -a android.intent.action.VIEW -d https://technastic.com
+ adb shell am start -t image/* -a android.intent.action.VIEW
+ Turn Android device ON or OFF: adb shell input keyevent 2
+ Press App Switcher Button: adb shell input keyevent KEYCODE_APP_SWITCH
+ Press Home button: adb shell input keyevent 3
+ Press Back button: adb shell input keyevent 4
+ Press Call button: adb shell input keyevent 5
+ End a call: adb shell input keyevent 6
+ Press Power Button to wake up screen: adb shell input keyevent 26
+ Turn ON the camera: adb shell input keyevent 27
+ Open web browser: adb shell input keyevent 64
+ Press the Enter key: adb shell input keyevent 66
+ Press Backspace button: adb shell input keyevent 67
+ Open Contacts app: adb shell input keyevent 207
+ Decrease display brightness: adb shell input keyevent 220
+ Increase Display brightness: adb shell input keyevent 221
+ Cut text: adb shell input keyevent 277
+ Copy text: adb shell input keyevent 278
+ Paste text: adb shell input keyevent 279
+ Make the device sleep: adb shell input keyevent KEYCODE_SLEEP
+ Make device wakeup: adb shell input keyevent KEYCODE_WAKEUP
+ Toggle Power menu: adb shell input keyevent KEYCODE_POWER
+ Trigger Volume up: adb shell input keyevent 24
+ Trigger Volume down: "adb shell input keyevent 25
+ Trigger Zoom in: adb shell input keyevent 168
+ Trigger Zoom out: adb shell input keyevent 169
+ Menu: adb shell input keyevent 82
+ Open Notifications: adb shell input keyevent 83
+ Launch Search: adb shell input keyevent 84
+ Play or pause media: adb shell input keyevent 85
+ Mute audio: adb shell input keyevent 91
+ Page up: adb shell input keyevent 92
+ Page down: adb shell input keyevent 93
+ Open Calendar: adb shell input keyevent 208
+ Launch Music: adb shell input keyevent 209
+ Open Calculator: adb shell input keyevent 210
+ Volume up: adb shell input keyevent 24
+ Make the lock screen sleep: adb shell input keyevent 223
+ Wakeup the lock screen: adb shell input keyevent 224
+ Make device wakeup: adb shell input keyevent KEYCODE_WAKEUP
+ Toggle Power menu: adb shell input keyevent KEYCODE_POWER
+ Clear: adb shell input keyevent 28
+ Caps lock: adb shell input keyevent 115
+ Number '0': adb shell input keyevent 7
+ Number '1': adb shell input keyevent 8
+ Number '2': adb shell input keyevent 9
+ Number '3': adb shell input keyevent 10
+ Number '4': adb shell input keyevent 11
+ Number '5': adb shell input keyevent 12
+ Number '6': adb shell input keyevent 13
+ Number '7': adb shell input keyevent 14
+ Number '8': adb shell input keyevent 15
+ Number '9': adb shell input keyevent 16
+ Letter 'a': adb shell input keyevent 29
+ Letter 'b': adb shell input keyevent 30
+ Letter 'c': adb shell input keyevent 31
+ Letter 'd': adb shell input keyevent 32
+ Letter 'e': adb shell input keyevent 33
+ Letter 'f': adb shell input keyevent 34
+ Letter 'g': adb shell input keyevent 35
+ Letter 'h': adb shell input keyevent 36
+ Letter 'i': adb shell input keyevent 37
+ Letter 'j': adb shell input keyevent 38
+ Letter 'k': adb shell input keyevent 39
+ Letter 'l': adb shell input keyevent 40
+ Letter 'm': adb shell input keyevent 41
+ Letter 'n': adb shell input keyevent 42
+ Letter 'o': adb shell input keyevent 43
+ Letter 'p': adb shell input keyevent 44
+ Letter 'q': adb shell input keyevent 45
+ Letter 'r': adb shell input keyevent 46
+ Letter 's': adb shell input keyevent 47
+ Key 't': adb shell input keyevent 48
+ Letter 'u': adb shell input keyevent 49
+ Letter 'v': adb shell input keyevent 50
+ Letter 'w': adb shell input keyevent 51
+ Letter 'x': adb shell input keyevent 52
+ Letter 'y': adb shell input keyevent 53
+ Letter 'z': adb shell input keyevent 54
+ Key 'comma': adb shell input keyevent 55
+ Key 'period': adb shell input keyevent 56
+ Key 'alt_left': adb shell input keyevent 57
+ Key 'alt_right': adb shell input keyevent 58
+ Key 'shift_left': adb shell input keyevent 59
+ Key 'shift_right': adb shell input keyevent 60
+ Key 'tab': adb shell input keyevent 61
+ Key 'space': adb shell input keyevent 62
+ Key 'symbols': adb shell input keyevent 63
+ Key 'minus': adb shell input keyevent 69
+ Key 'equals': adb shell input keyevent 70
+ Key 'left bracket': adb shell input keyevent 71
+ Key 'right bracket': adb shell input keyevent 72
+ Key 'backslash': adb shell input keyevent 73
+ Key 'semicolon': adb shell input keyevent 74
+ Key 'apostrophe': adb shell input keyevent 75
+ Key 'slash': adb shell input keyevent 76
+ Key '@': adb shell input keyevent 77
+ Number '0': adb shell input keyevent 144
+ Number '1': adb shell input keyevent 145
+ Number '2': adb shell input keyevent 146
+ Number '3': adb shell input keyevent 147
+ Number '4': adb shell input keyevent 148
+ Number '5': adb shell input keyevent 149
+ Number '6': adb shell input keyevent 150
+ Number '7': adb shell input keyevent 151
+ Number '8': adb shell input keyevent 152
+ Number '9': adb shell input keyevent 153
+ Symbol 'divide': adb shell input keyevent 154
+ Symbol 'multiply': adb shell input keyevent 155
+ Symbol 'subtract': adb shell input keyevent 156
+ Symbol 'add': adb shell input keyevent 157
+ Symbol 'dot': adb shell input keyevent 158
+ Symbol 'comma': adb shell input keyevent 159
+ Symbol 'enter': adb shell input keyevent 160
+ Symbol 'equals': adb shell input keyevent 161
