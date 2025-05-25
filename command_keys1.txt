@@ -1,0 +1,98 @@
+Controls
+Movement
+A - Strafe Left
+
+S - Walk Back
+
+W - Walk Forward
+
+D - Strafe Right
+
+SPACE - Jump/Fly
+
+⇧ Shift - Sneak
+
+CTRL - Sprint
+
+Gameplay (Mouse)
+Left Click - Attack/Destroy
+
+Middle Click - Pick block
+
+Right Click - Use Item / Place Blocks
+
+Inventory
+E - Open/Close Inventory
+
+1 through 9 - Change hotbar slots
+
+F - Swap item in hands
+
+Q - Drop selected item
+
+Multiplayer
+T - Open chat
+
+ESC - Pause/Resume
+
+Tab ⇆ - Toggle the list of players
+
+Miscellaneous
+CTRL + B - Toggles the arrator
+
+F1 - Toggles the Heads-up display
+
+F2 - Takes a screenshot
+
+F5 - Toggles perspective
+
+F11 - Toggles full-screen mode
+
+L - Open the Advancements screen
+
+Visual map
+Kbd-minecraft
+Visual map of Minecraft keyboard controls. Click on the image for a clearer view.
+
+Changing controls
+In the Java Edition of Minecraft, controls can be changed from within the game's menu, under Options > Controls. A user may bind specific keys to any action. Controls can also be reset to default, by clicking "Reset Keys".
+
+Minecraft: Bedrock Edition
+Controls
+Movement
+
+Left Arrow - Strafe Left
+
+Back Arrow - Walk Back
+
+Front Arrow - Walk Forward
+
+Right Arrow - Strafe Right
+
+45 Degrees Turned Square - Jump/Fly
+
+Double Touch 45 Degrees Turned Blank Square
+
+Double Touch Front Arrow - Sprint
+
+Gameplay
+
+Touchscreen - Attack/Place
+
+Hold - Break/Use
+
+Inventory
+
+3 Dots - Open/Close Inventory
+
+Touch Hotbar Slots - Change Hotbar Slots
+
+Hold Hotbar Slots - Drop Item
+
+Multiplayer
+
+Open Chat Icon - Open Chat/Command
+
+Pause Icon - Pause
+
+Resume Button - Resume
